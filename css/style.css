@@ -1,9 +1,22 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 .vertical-center {
-  margin: 0;
+  /* margin: 0;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 25%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 500px;
 }
 
 .flex {
@@ -36,16 +49,18 @@ form {
 }
 
 input {
-  font-size: 30px;
-  padding: 30px;
+  font-size: 20px;
+  padding: 20px;
 }
 
 input[type="text"] {
-  width: 600px;
+  width: 150px;
+  padding: 10px;
 }
 
 input[type="date"] {
-  width: 600px;
+  width: 200px;
+  padding: 10px;
   display: block;
 }
 
@@ -54,11 +69,15 @@ input[type="button"]:hover {
 }
 
 p {
-  font-size: 30px;
+  font-size: 15px;
   color: grey;
 }
+
+#findYear,
 #findAge {
-  margin-top: 20px;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 #findAge:hover,
@@ -68,4 +87,28 @@ p {
 
 .findAge {
   display: none;
+}
+
+@media screen and (min-width: 700px) {
+  #findYear,
+  #findAge {
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  input[type="text"] {
+    width: 500px;
+    padding: 30px;
+    font-size: 30px;
+  }
+
+  .mainButton {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 25px;
+  }
 }
