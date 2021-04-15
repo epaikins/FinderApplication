@@ -4,6 +4,10 @@ let findYear = document.querySelector('#findYear');
 let findAge = document.querySelector('#findAge');
 let findYearOut = document.querySelector('#findYearOut');
 let findAgeOut = document.querySelector('#findAgeOut');
+let mainYear = document.querySelector('#mainYear');
+let mainAge = document.querySelector('#mainAge');
+let findYearContainer = document.querySelector('.findYear');
+let findAgeContainer = document.querySelector('.findAge');
 
 function calculateYear(age) {
     if (age.value === '' || age.value <= 0 || isNaN(age.value)) {
@@ -31,9 +35,18 @@ findYear.addEventListener('click', () => {
     } else {
         findYearOut.innerText = calculateYear(age);
     }
-
 });
 
 findAge.addEventListener('click', () => {
     findAgeOut.innerText = calculateAge(date);
+});
+
+mainYear.addEventListener('click', () => {
+    findYearContainer.style.display = 'block'
+    findAgeContainer.style.display = 'none'
+});
+
+mainAge.addEventListener('click', () => {
+    findYearContainer.style.display = 'none'
+    findAgeContainer.style.display = 'block'
 });

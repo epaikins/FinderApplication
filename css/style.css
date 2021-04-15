@@ -1,4 +1,9 @@
-body {
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
 }
 
 .flex {
@@ -8,9 +13,24 @@ body {
   margin-bottom: 50px;
 }
 
-.mainButtons {
-  padding: 100px;
+.mainButton {
+  margin-left: 30px;
+  font-family: poppins;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 2px 2px 20px 0.1px rgba(0, 0, 0, 0.2);
+  color: grey;
 }
+
+input:focus {
+  outline: none;
+}
+
+input[type="button"]:hover {
+  background-color: wheat;
+  color: whitesmoke;
+}
+
 form {
   text-align: center;
 }
@@ -24,10 +44,23 @@ input[type="text"] {
   width: 600px;
 }
 
+input[type="date"] {
+  width: 600px;
+}
+
 input[type="button"]:hover {
   cursor: pointer;
 }
 
 p {
   font-size: 30px;
+}
+
+#findAge:hover,
+#findYear:hover {
+  border: none;
+}
+
+.findAge {
+  display: none;
 }
