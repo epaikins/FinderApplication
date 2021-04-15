@@ -1,0 +1,33 @@
+body {
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+.mainButtons {
+  padding: 100px;
+}
+form {
+  text-align: center;
+}
+
+input {
+  font-size: 30px;
+  padding: 30px;
+}
+
+input[type="text"] {
+  width: 600px;
+}
+
+input[type="button"]:hover {
+  cursor: pointer;
+}
+
+p {
+  font-size: 30px;
+}
