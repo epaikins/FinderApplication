@@ -8,6 +8,9 @@ let mainYear = document.querySelector('#mainYear');
 let mainAge = document.querySelector('#mainAge');
 let findYearContainer = document.querySelector('.findYear');
 let findAgeContainer = document.querySelector('.findAge');
+let futureDate = document.querySelector('#futureDate');
+futureDate.valueAsDate = new Date();
+// console.log(d);
 
 function calculateYear(age) {
     if (age.value === '' || age.value <= 0 || isNaN(age.value)) {
@@ -21,10 +24,10 @@ function calculateYear(age) {
 
 
 function calculateAge(year) {
-    let date = new Date().getFullYear();
-    let inputDate = new Date(year.value)
-    console.log(inputDate);
-    let birthAge = date - inputDate.getFullYear();
+    // let date = new Date().getFullYear();
+    let newdate = futureDate.valueAsDate.getFullYear();
+    let inputDate = new Date(year.value);
+    let birthAge = newdate - inputDate.getFullYear();
     return `Your age is ${birthAge}`;
 };
 

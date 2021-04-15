@@ -46,6 +46,7 @@ input[type="text"] {
 
 input[type="date"] {
   width: 600px;
+  display: block;
 }
 
 input[type="button"]:hover {
@@ -54,6 +55,10 @@ input[type="button"]:hover {
 
 p {
   font-size: 30px;
+  color: grey;
+}
+#findAge {
+  margin-top: 20px;
 }
 
 #findAge:hover,
